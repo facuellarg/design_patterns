@@ -35,3 +35,7 @@ func main() {
 	fmt.Printf("%s\n", factory.CreateChair())
 	fmt.Printf("%s\n", factory.CreateSofa())
 }
+
+// [credential]
+//         helper = winstore
+//         provider = generic
