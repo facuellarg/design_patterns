@@ -20,5 +20,5 @@ func (bf *builderForceCar) BuildMotor() {
 	bf.car.SetMotor(Motor{200})
 }
 func (bf *builderForceCar) BuildChair() {
-	bf.car.SetChair(Chair{})
+	bf.car.SetChair(Chair{"red"})
 }

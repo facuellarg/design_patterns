@@ -47,8 +47,14 @@ func (c *Car) SetFrontBumper(frontBumper FrontBumper) {
 }
 
 func (c *Car) String() string {
-	if c.motor.Force > 10 {
-		return "i am a speed car"
+	var carString string
+	if c.motor.Force > 100 {
+		carString = "I am a speed car"
+	} else {
+		carString = "I am a normal car"
 	}
-	return "i am a normal car"
+	if c.chair.color == "" {
+		return carString + " and I don't have chair color"
+	}
+	return carString + " and my chair color is " + c.chair.color
 }
